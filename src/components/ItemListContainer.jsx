@@ -1,5 +1,5 @@
 import "../styles.css"
-import BookCard from './BookCard.js';
+import BookCard from './BookCard.jsx';
 import libros from "../libros.json";
 
 function ItemListContainer({greetings}) {
