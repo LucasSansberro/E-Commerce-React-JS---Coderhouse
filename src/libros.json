@@ -1,5 +1,23 @@
 [
-	{ "id":1, "nombre": "Memorias de Adriano","precio": 600, "genero": "Novela Histórica", "img":"https://d3ugyf2ht6aenh.cloudfront.net/stores/001/259/581/products/9789871138692-e43202ba2ce1c39daa16312032574714-1024-1024.jpg" },
-	{ "id":2, "nombre": "El marino que perdió la gracia del mar","precio": 1200, "genero": "Oriental, novela psicológica", "img":"https://www.alianzaeditorial.es/imagenes/libros/grande/9788491819820-el-marino-que-perdio-la-gracia-del-mar.jpg" },
-	{ "id":3, "nombre": "Los Miserables","precio": 1200, "genero": "Novela Histórica", "img":"https://image.cdn0.buscalibre.com/5b5ae2451dc861bc548b4567.__RS360x360__.jpg" }
+  {
+    "id": 1,
+    "nombre": "Memorias de Adriano",
+    "precio": 600,
+    "genero": "Novela Histórica",
+    "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/259/581/products/9789871138692-e43202ba2ce1c39daa16312032574714-1024-1024.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "El marino que perdió la gracia del mar",
+    "precio": 1200,
+    "genero": "Oriental, novela psicológica",
+    "img": "https://www.alianzaeditorial.es/imagenes/libros/grande/9788491819820-el-marino-que-perdio-la-gracia-del-mar.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Los Miserables",
+    "precio": 1200,
+    "genero": "Novela Histórica",
+    "img": "https://image.cdn0.buscalibre.com/5b5ae2451dc861bc548b4567.__RS360x360__.jpg"
+  }
 ]
