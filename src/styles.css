@@ -1,0 +1,21 @@
+.botonAbrirCarrito{
+  background: none;
+  color: white;
+  border: 0;
+  position: relative;
+}
+
+.cantidadCarrito {
+  position: absolute;
+  top: -10px;
+  right: -5px;
+  font-size: 12px;
+  background-color: red;
+  color: white;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.bookCard {
+  width: 18rem;
+}
