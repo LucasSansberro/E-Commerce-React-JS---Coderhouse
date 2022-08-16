@@ -9,7 +9,7 @@ function ItemListContainer({ greetings }) {
       <div className="container-fluid ">
         <div className="row justify-content-around mt-5">
           {libros.map((item) => (
-            <BookCard
+            <BookCard key={item.id}
               img={item.img}
               nombre={item.nombre}
               genero={item.genero}

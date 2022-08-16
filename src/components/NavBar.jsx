@@ -26,7 +26,7 @@ function NavBar() {
         <div className="collapse navbar-collapse mx-3 mt-3" id="navbarNav">
           <ul className="navbar-nav">
             {navBarItems.map((item) => (
-              <li className="nav-item">
+              <li key={item} className="nav-item">
                 <p className="nav-link" href="">
                   {" "}
                   {item}{" "}
