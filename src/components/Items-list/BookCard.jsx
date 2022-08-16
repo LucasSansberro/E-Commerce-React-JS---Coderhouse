@@ -1,4 +1,4 @@
-import "../styles.css";
+import "../../styles.css";
 
 const BookCard = (props) => {
   const { nombre, genero, precio, img } = props;

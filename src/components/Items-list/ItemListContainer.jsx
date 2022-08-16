@@ -1,6 +1,6 @@
-import "../styles.css";
+import "../../styles.css";
 import BookCard from "./BookCard.jsx";
-import libros from "../libros.json";
+import libros from "../../libros.json";
 
 function ItemListContainer({ greetings }) {
   return (

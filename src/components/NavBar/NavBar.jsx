@@ -1,5 +1,5 @@
 import CartWidget from "./CartWidget";
-import "../styles.css";
+import "../../styles.css";
 
 function NavBar() {
   const navBarItems = ["Nosotros", "Ofertas", "Contacto"];
