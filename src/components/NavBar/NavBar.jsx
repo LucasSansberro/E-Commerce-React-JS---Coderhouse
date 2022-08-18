@@ -1,5 +1,4 @@
 import CartWidget from "./CartWidget";
-import "../../styles.css";
 
 function NavBar() {
   const navBarItems = ["Nosotros", "Ofertas", "Contacto"];
@@ -28,8 +27,7 @@ function NavBar() {
             {navBarItems.map((item) => (
               <li key={item} className="nav-item">
                 <p className="nav-link" href="">
-                  {" "}
-                  {item}{" "}
+                  {item}
                 </p>
               </li>
             ))}

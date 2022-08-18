@@ -19,3 +19,28 @@
 .bookCard {
   width: 18rem;
 }
+
+.img-Bookcard {
+  height: 100%;
+}
+
+.boton-itemCount {
+  background-color: lightblue;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.boton-agregar-quitar {
+  font-size: 20px;
+  background: none;
+  border: none;
+}
+
+.boton-agregarCarrito {
+  border: none;
+  padding: 15px;
+  margin: 15px auto;
+}
