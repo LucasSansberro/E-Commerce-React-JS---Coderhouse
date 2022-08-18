@@ -18,9 +18,6 @@
 .env.test.local
 .env.production.local
 /.vscode
-.package.json
-.package-lock.json
-.gitignore
 
 npm-debug.log*
 yarn-debug.log*
