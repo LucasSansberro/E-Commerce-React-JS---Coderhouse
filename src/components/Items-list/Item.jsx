@@ -16,9 +16,7 @@ const BookCard = (props) => {
         <h5 className="card-title">{nombre}</h5>
         <p className="card-text">{genero}</p>
       </div>
-      <p href="" className="btn btn-primary ">
-        Precio: ${precio}
-      </p>
+      <p className="btn btn-primary ">Precio: ${precio}</p>
       <ItemCount stock={stock} />
     </div>
   );
