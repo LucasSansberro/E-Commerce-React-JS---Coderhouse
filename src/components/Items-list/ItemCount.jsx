@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Swal from "sweetalert2";
 import "../../styles.css";
 
-const ItemCount = ({ stock }) => {
-  const [count, setCount] = useState(1);
+const ItemCount = ({ stock, initial, onAdd }) => {
+  const [count, setCount] = useState(initial);
   const agregarItem = () => {
     if (count < stock) {
       setCount(count + 1);
@@ -34,7 +34,7 @@ const ItemCount = ({ stock }) => {
           <i className="bi bi-plus-circle"></i>
         </button>
       </div>
-      <button className="boton-itemCount boton-agregarCarrito">
+      <button className="boton-itemCount boton-agregarCarrito" onClick={onAdd}>
         Agregar al carrito
       </button>
     </div>
