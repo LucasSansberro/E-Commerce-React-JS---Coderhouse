@@ -5,6 +5,7 @@
     "precio": 600,
     "stock": 7,
     "genero": "Novela Histórica",
+    "sinopsis": "La apasionante personalidad de Adriano, emperador de Roma en el siglo segundo, y uno de los más notables gobernantes que tuvo el Imperio, transciende cualquier reseña sobre su obra y figura para convertirse en fuente de inspiración de esta novela excepcional, alabada como una de las obras más singulares, bellas y hondas de la literatura del siglo XX. Este inventario autobiográfico ficticio que Adriano hace a las puertas de la muerte constituye el más íntimo y magistral retrato de quien fue uno de los últimos espíritus libres de la Antigüedad.",
     "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/259/581/products/9789871138692-e43202ba2ce1c39daa16312032574714-1024-1024.jpg"
   },
   {
@@ -13,6 +14,7 @@
     "precio": 1200,
     "stock": 12,
     "genero": "Oriental, novela psicológica",
+    "sinopsis": "Ryuji, marinero, decide abandonar el mar y sus anhelos tras conocer a la viuda Fusako y enamorarse de ella. Sin embargo Noboru, hijo de la viuda, tras haber idealizado inicialmente al marinero, influenciado por su grupo de amigos no aceptará la decisión de Ryuji de vivir en tierra y convertirse en su padre.",
     "img": "https://www.alianzaeditorial.es/imagenes/libros/grande/9788491819820-el-marino-que-perdio-la-gracia-del-mar.jpg"
   },
   {
@@ -21,6 +23,7 @@
     "precio": 1200,
     "stock": 5,
     "genero": "Novela Histórica",
+    "sinopsis": "Después de 19 años como prisionero, Jean Valjean es liberado por Javert, el oficial a cargo de la fuerza de trabajo de la prisión. Valjean viola su libertad y más tarde usa el dinero robado para reinventarse como alcalde y dueño de una fábrica. Por su parte, Javert promete llevar a Valjean de vuelta a la cárcel. Ocho años después, Valjean se convierte en el guardián de un niño llamado Cosette tras la muerte de su madre, pero la persecución de Javert significa que la paz tardará en llegar.",
     "img": "https://image.cdn0.buscalibre.com/5b5ae2451dc861bc548b4567.__RS360x360__.jpg"
   }
 ]

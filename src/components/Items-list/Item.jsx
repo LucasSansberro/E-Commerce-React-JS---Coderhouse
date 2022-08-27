@@ -1,13 +1,14 @@
 import React from "react";
 import "../../styles.css";
 import ItemCount from "./ItemCount";
+import { Link } from "react-router-dom";
 
 const BookCard = (props) => {
-  const { nombre, genero, precio, stock, img } = props;
-  const onAdd = () => console.log("¡Agregado al carrito!")
+  const { nombre, genero, precio, stock, img, id } = props;
+  const onAdd = () => console.log("¡Agregado al carrito!");
 
   return (
-    <div className="card bookCard text-center">
+    <div className="card bookCard text-center mb-5">
       <img
         className="card-img-top img-Bookcard"
         src={img}
@@ -18,7 +19,10 @@ const BookCard = (props) => {
         <p className="card-text">{genero}</p>
       </div>
       <p className="btn btn-primary ">Precio: ${precio}</p>
-      <ItemCount stock={stock} initial={1} onAdd={onAdd}/>
+      <Link to={`/item/${id}`}>
+        <p className="btn btn-primary boton-detalles-Item">Ver más</p>
+      </Link>
+      <ItemCount stock={stock} initial={1} onAdd={onAdd} />
     </div>
   );
 };

@@ -44,3 +44,25 @@
   padding: 15px;
   margin: 15px auto;
 }
+
+.img-ItemDetail {
+  height:30em;
+  width:auto
+}
+
+.sinopsis-ItemDetail {
+  font-size: 1.5em;
+  line-height: 2em;
+}
+
+.boton-ItemDetail {
+  font-size:1.25em
+}
+
+.boton-detalles-Item{
+  width:100%
+}
+
+.boton-NavBar {
+  text-decoration: none;
+}
