@@ -46,8 +46,8 @@
 }
 
 .img-ItemDetail {
-  height:30em;
-  width:auto
+  height: 30em;
+  width: auto;
 }
 
 .sinopsis-ItemDetail {
@@ -56,13 +56,36 @@
 }
 
 .boton-ItemDetail {
-  font-size:1.25em
+  font-size: 1.25em;
 }
 
-.boton-detalles-Item{
-  width:100%
+.boton-detalles-Item {
+  width: 100%;
 }
 
 .boton-NavBar {
   text-decoration: none;
+}
+
+.brand-NavBar {
+  text-decoration: none;
+  color:inherit
+}
+
+.brand-NavBar:hover {
+  color:gray
+}
+
+.lista-generos {
+  padding:15px;
+  background-color: lightcyan;
+}
+
+.item-lista-generos{
+  margin-top: 15px;
+}
+
+.link-item-lista-generos {
+  text-decoration: none;
+  color:inherit
 }

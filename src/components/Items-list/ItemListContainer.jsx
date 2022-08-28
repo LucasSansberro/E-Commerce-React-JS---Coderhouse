@@ -1,19 +1,25 @@
 import React, { useState, useEffect } from "react";
 import ItemList from "./ItemList";
 import libros from "../../libros.json";
+import { useParams } from "react-router-dom";
 
 function ItemListContainer({ greetings }) {
   const [items, setItems] = useState(0);
+  const { categoryId } = useParams();
 
   useEffect(() => {
     new Promise((resolve) => {
+      let listaLibros = [];
       setTimeout(() => {
-        resolve(libros);
-      }, 2000);
+        listaLibros = categoryId
+          ? libros.filter((e) => e.generourl === categoryId)
+          : libros;
+        resolve(listaLibros);
+      }, 500);
     }).then((data) => {
       setItems(data);
     });
-  }, []);
+  }, [categoryId]);
 
   return (
     <>

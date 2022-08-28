@@ -7,7 +7,10 @@ function NavBar() {
     <nav className="navbar navbar-dark navbar-expand-lg bg-dark">
       <div className="container-fluid justify-content-between mt-3">
         <p className="navbar-brand">
-          <i className="bi bi-book mx-3"></i>MyBooks <CartWidget />
+          <Link className="brand-NavBar" to={"/"}>
+            <i className="bi bi-book mx-3"></i>MyBooks{" "}
+          </Link>{" "}
+          <CartWidget />
         </p>
         <button
           className="navbar-toggler"
@@ -28,6 +31,34 @@ function NavBar() {
               <Link className="boton-NavBar" to={"/"}>
                 <p className="nav-link boton-NavBar">Inicio</p>
               </Link>
+            </li>
+            <li className="nav-item dropdown">
+              <p
+                className="nav-link dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Géneros
+              </p>
+              <ul className="dropdown-menu lista-generos">
+                <li className="item-lista-generos">
+                  <Link
+                    className="link-item-lista-generos"
+                    to="/category/historica"
+                  >
+                    Histórica
+                  </Link>
+                </li>
+                <li className="item-lista-generos">
+                  <Link
+                    className="link-item-lista-generos"
+                    to="/category/oriental"
+                  >
+                    Oriental
+                  </Link>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>

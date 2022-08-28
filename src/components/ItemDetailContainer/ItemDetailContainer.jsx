@@ -16,6 +16,7 @@ const ItemDetailContainer = () => {
       setItems(data);
     });
   }, [id]);
+
   return (
     <div>
       <div className="container-fluid ">
