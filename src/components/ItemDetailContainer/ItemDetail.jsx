@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../styles.css";
+import ItemCount from "./ItemCount";
+import { Link } from "react-router-dom";
 
 const ItemDetail = (props) => {
+  const [finCompra, setFinCompra] = useState(false);
+  const onAdd = () => setFinCompra(true);
+
   return (
     <div className="my-5">
       <div className="container p-3 bg-info bg-opacity-10 border border-info rounded">
@@ -17,6 +22,21 @@ const ItemDetail = (props) => {
           <p className="col-3 btn btn-primary boton-ItemDetail">
             Stock: {props.item.stock}
           </p>
+        </div>
+        <div>
+          {finCompra ? (
+            <Link className="boton-NavBar" to={`/cart`}>
+            <button
+              className="boton-itemCount boton-agregarCarrito col-6 mx-auto "
+            >
+              <span className="span-boton-agregarCarrito ">
+                Terminar compra
+              </span>
+            </button>
+            </Link>
+          ) : (
+            <ItemCount stock={props.item.stock} initial={1} onAdd={onAdd} />
+          )}
         </div>
       </div>
     </div>

@@ -1,11 +1,9 @@
 import React from "react";
 import "../../styles.css";
-import ItemCount from "./ItemCount";
 import { Link } from "react-router-dom";
 
 const BookCard = (props) => {
-  const { nombre, genero, precio, stock, img, id } = props;
-  const onAdd = () => console.log("¡Agregado al carrito!");
+  const { nombre, genero, precio, img, id } = props;
 
   return (
     <div className="card bookCard text-center mb-5">
@@ -22,7 +20,6 @@ const BookCard = (props) => {
       <Link to={`/item/${id}`}>
         <p className="btn btn-primary boton-detalles-Item">Ver más</p>
       </Link>
-      <ItemCount stock={stock} initial={1} onAdd={onAdd} />
     </div>
   );
 };

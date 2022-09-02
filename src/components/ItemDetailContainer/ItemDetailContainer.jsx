@@ -10,6 +10,7 @@ const ItemDetailContainer = () => {
   useEffect(() => {
     new Promise((resolve) => {
       setTimeout(() => {
+        // eslint-disable-next-line eqeqeq
         resolve(libros.find((e) => e.id == id));
       }, 750);
     }).then((data) => {
