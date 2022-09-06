@@ -1,17 +1,26 @@
 import CartWidget from "./CartWidget";
 import { Link } from "react-router-dom";
 import "../../styles.css";
+import { CartContext } from "../../context/CartContext";
+import { useContext } from "react";
 
 function NavBar() {
+  const { items } = useContext(CartContext);
   return (
     <nav className="navbar navbar-dark navbar-expand-lg bg-dark">
       <div className="container-fluid justify-content-between mt-3">
-        <p className="navbar-brand">
+        <div className="navbar-brand mb-3">
           <Link className="brand-NavBar" to={"/"}>
             <i className="bi bi-book mx-3"></i>MyBooks{" "}
           </Link>{" "}
-          <CartWidget />
-        </p>
+          {items.length ? (
+            <Link to="/cart">
+              <CartWidget />
+            </Link>
+          ) : (
+            "" //Por algún motivo, si no uso ternario aparece un cero en el lugar del carrito cuando este está vacío
+          )}
+        </div>
         <button
           className="navbar-toggler"
           type="button"

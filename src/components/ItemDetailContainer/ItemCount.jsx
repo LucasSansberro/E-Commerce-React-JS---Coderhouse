@@ -24,7 +24,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
     }
   };
   return (
-    <div className="row justify-content-around" >
+    <div className="row justify-content-around">
       <div className="boton-itemCount col-5">
         <button className="boton-agregar-quitar" onClick={quitarItem}>
           <i className="bi bi-dash-circle"></i>
@@ -34,7 +34,10 @@ const ItemCount = ({ stock, initial, onAdd }) => {
           <i className="bi bi-plus-circle"></i>
         </button>
       </div>
-      <button className="boton-itemCount boton-agregarCarrito col-5" onClick={onAdd}>
+      <button
+        className="boton-itemCount boton-agregarCarrito col-5"
+        onClick={() => onAdd(count)}
+      >
         <span className="span-boton-agregarCarrito">Agregar al carrito</span>
       </button>
     </div>
