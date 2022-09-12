@@ -1,6 +1,6 @@
 ### MyBooks
 
-Final project for my Coderhouse React course
+Book-ECommerce - My final project for the Coderhouse React course
 
 It includes Context, useState, useEffect, React-Router and Firebase
 
