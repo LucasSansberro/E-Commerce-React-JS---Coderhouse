@@ -15,12 +15,13 @@ export const CartProvider = ({ children }) => {
       } else {
         Swal.fire({
           title: "¡Lo sentimos!",
-          text: "Su carrito posee el máximo stock de este libro",
+          text: "Su pedido ha alcanzado el máximo stock disponible",
           icon: "warning",
           confirmButtonText: "Continuar",
           allowOutsideClick: false,
           showCloseButton: true,
         });
+        aux[itemIndex].quantity = aux[itemIndex].stock
       }
       setItems([...aux]);
     } else {

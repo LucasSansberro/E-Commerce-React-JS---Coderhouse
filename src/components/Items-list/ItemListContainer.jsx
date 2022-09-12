@@ -1,24 +1,27 @@
 import React, { useState, useEffect } from "react";
 import ItemList from "./ItemList";
-import libros from "../../libros.json";
 import { useParams } from "react-router-dom";
+import db from "../../services";
+import { collection, getDocs } from "firebase/firestore";
 
 function ItemListContainer({ greetings }) {
   const [items, setItems] = useState(0);
   const { categoryId } = useParams();
 
   useEffect(() => {
-    new Promise((resolve) => {
+    const getColData = async () => {
+      const data = collection(db, "libros");
+      const col = await getDocs(data);
+      const res = col.docs.map(
+        (doc) => (doc = { firebaseId: doc.id, ...doc.data() })
+      );
       let listaLibros = [];
-      setTimeout(() => {
-        listaLibros = categoryId
-          ? libros.filter((e) => e.generourl === categoryId)
-          : libros;
-        resolve(listaLibros);
-      }, 500);
-    }).then((data) => {
-      setItems(data);
-    });
+      listaLibros = categoryId
+        ? res.filter((e) => e.generourl === categoryId)
+        : res;
+      setItems(listaLibros);
+    };
+    getColData();
   }, [categoryId]);
 
   return (

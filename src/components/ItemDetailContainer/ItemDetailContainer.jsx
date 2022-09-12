@@ -1,21 +1,24 @@
 import React, { useState, useEffect } from "react";
-import libros from "../../libros.json";
 import ItemDetail from "./ItemDetail";
 import { useParams } from "react-router-dom";
+import db from "../../services";
+import { collection, getDocs } from "firebase/firestore";
 
 const ItemDetailContainer = () => {
   const [items, setItems] = useState(0);
   const { id } = useParams();
 
   useEffect(() => {
-    new Promise((resolve) => {
-      setTimeout(() => {
-        // eslint-disable-next-line eqeqeq
-        resolve(libros.find((e) => e.id == id));
-      }, 750);
-    }).then((data) => {
-      setItems(data);
-    });
+    const getColData = async () => {
+      const data = collection(db, "libros");
+      const col = await getDocs(data);
+      const res = col.docs.map(
+        (doc) => (doc = { firebaseId: doc.id, ...doc.data() })
+      );
+      const libro = res.find((e) => e.id == id);
+      setItems(libro);
+    };
+    getColData();
   }, [id]);
 
   return (
