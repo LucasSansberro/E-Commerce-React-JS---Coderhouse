@@ -15,6 +15,7 @@ const ItemDetailContainer = () => {
       const res = col.docs.map(
         (doc) => (doc = { firebaseId: doc.id, ...doc.data() })
       );
+      // eslint-disable-next-line eqeqeq
       const libro = res.find((e) => e.id == id);
       setItems(libro);
     };
