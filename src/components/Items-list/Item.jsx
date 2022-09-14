@@ -6,7 +6,8 @@ const BookCard = (props) => {
   const { nombre, genero, precio, img, id } = props;
 
   return (
-    <div className="card bookCard text-center mb-5">
+    <div className="col-xl-4 col-md-6 mb-5">
+    <div className="card bookCard text-center">
       <img
         className="card-img-top img-Bookcard"
         src={img}
@@ -20,6 +21,7 @@ const BookCard = (props) => {
       <Link to={`/item/${id}`}>
         <p className="btn btn-primary boton-detalles-Item">Ver más</p>
       </Link>
+    </div>
     </div>
   );
 };

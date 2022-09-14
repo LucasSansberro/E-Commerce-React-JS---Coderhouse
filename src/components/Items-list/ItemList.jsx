@@ -2,7 +2,7 @@ import Item from "./Item";
 
 const ItemList = ({ items }) => {
   return (
-    <div className="row justify-content-around mt-5">
+    <div className="row">
       {items.map((item) => (
         <Item
           key={item.id}

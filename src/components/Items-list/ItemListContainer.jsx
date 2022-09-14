@@ -26,7 +26,7 @@ function ItemListContainer({ greetings }) {
 
   return (
     <>
-      <h2 className="text-center mt-4">{greetings}</h2>
+      <h2 className="text-center my-4">{greetings}</h2>
       <div className="container-fluid ">
         {items.length ? (
           <ItemList items={items} />
