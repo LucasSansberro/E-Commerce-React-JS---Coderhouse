@@ -43,7 +43,7 @@ function NavBar() {
             </li>
             <li className="nav-item dropdown">
               <p
-                className="nav-link dropdown-toggle"
+                className="nav-link dropdown-toggle "
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -51,7 +51,7 @@ function NavBar() {
                 Géneros
               </p>
               <ul className="dropdown-menu lista-generos">
-                <li className="item-lista-generos">
+                <li className="item-lista-generos me-5">
                   <Link
                     className="link-item-lista-generos"
                     to="/category/historica"
@@ -59,12 +59,20 @@ function NavBar() {
                     Histórica
                   </Link>
                 </li>
-                <li className="item-lista-generos">
+                <li className="item-lista-generos me-5">
                   <Link
                     className="link-item-lista-generos"
                     to="/category/oriental"
                   >
                     Oriental
+                  </Link>
+                </li>
+                <li className="item-lista-generos me-5">
+                  <Link
+                    className="link-item-lista-generos"
+                    to="/category/tragedia"
+                  >
+                    Tragedia familiar
                   </Link>
                 </li>
               </ul>
