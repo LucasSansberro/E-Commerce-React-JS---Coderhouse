@@ -74,6 +74,7 @@ const CartForm = ({ items }) => {
       setName("");
       setEmail("");
       setCellphone("");
+      clear()
     }
   };
 
@@ -129,7 +130,7 @@ const CartForm = ({ items }) => {
           <button className="botonesCarrito" onClick={clear}>
             Vaciar carrito
           </button>
-          <button className="botonesCarrito col-12">
+          <button type="button" className="botonesCarrito col-12 removePointerCart">
             <span>Precio final: ${precioFinal}</span>
           </button>
           <button type="submit" className="botonesCarrito">

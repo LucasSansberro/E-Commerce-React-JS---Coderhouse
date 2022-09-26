@@ -3,13 +3,16 @@ import { Link } from "react-router-dom";
 
 const EmptyCart = () => {
   return (
-    <div className="container cuadroScripts w-25 d-flex justify-content-between">
-      <div className="row">
-        <h3 className="col-12">Carrito vacío</h3>
+    <div className="container cuadroScripts w-25 d-flex flex-column justify-content-between text-center">
+      <div>
+        <i className="bi bi-cart-x emptyCart"></i>
       </div>
-      <div className="row">
-        <Link className="col-12" to="/">
-          <button className="botonesCarrito">Volver al inicio</button>
+      <div className="mb-3">
+        <h3>Carrito vacío</h3>
+      </div>
+      <div>
+        <Link to="/">
+          <button className="botonesCarrito p-3">Volver al inicio</button>
         </Link>
       </div>
     </div>
