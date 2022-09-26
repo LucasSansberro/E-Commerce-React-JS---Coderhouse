@@ -35,10 +35,6 @@
     right: 3vw;
   }
 
-  .cuadroCarrito {
-    height: 77vh;
-  }
-    
   .listaCarrito {
     font-size: 0.65em;
     margin-top: 5px;
@@ -51,17 +47,14 @@
   .botonesCarrito {
     padding: 0px;
     font-size: 0.85em;
-    margin-top: 3px;
-    margin-bottom: 1px;
+    margin-top: 10px;
+    margin-bottom: 5px;
   }
 
-  .botonDeEnvio {
-    height: 20px;
-    transition: none;
-  }
-  
-  .animacion-botonDeEnvio:hover {
-    transform: none;
+  .inputCarrito{
+    font-size:0.85em;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 
@@ -73,13 +66,9 @@
     top: 5vh;
     right: 5vw;
   }
-
-  .cuadroCarrito {
-    height: 70vh;
-  }
     
   .listaCarrito {
-    font-size: 1em;
+    font-size: 1.5em;
     margin-top: 5px;
   }
 
@@ -89,19 +78,15 @@
 
   .botonesCarrito {
     padding: 5px;
-    font-size: 1em;
-    margin-top: 3px;
-    margin-bottom: 1px;
+    font-size: 1.5em;
+    margin-top: 15px;
+    margin-bottom: 10px;
   }
 
-  .botonDeEnvio {
-    height: 30px;
-    transition: none;
-  }
-}
-
-@media (hover: none) {
-  .fa-paper-plane {
-    display: none;
+  
+  .inputCarrito{
+    font-size:1.25em;
+    margin-top: 20px;
+    margin-bottom: 15px;
   }
 }

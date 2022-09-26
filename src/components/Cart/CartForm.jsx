@@ -97,7 +97,7 @@ const CartForm = ({ items }) => {
           onSubmit={submitHandler}
           className="col-lg-4 col-xl-4 d-flex flex-column justify-content-around"
         >
-          <div className="d-flex justify-content-between col-12">
+          <div className="d-flex justify-content-between col-12 inputCarrito">
             <label>Nombre completo:</label>
             <input
               className="col-7 text-center"
@@ -107,7 +107,7 @@ const CartForm = ({ items }) => {
               placeholder="Nombre"
             />
           </div>
-          <div className="d-flex justify-content-between">
+          <div className="d-flex justify-content-between inputCarrito">
             <label>Correo electrónico:</label>
             <input
               className="col-7 text-center"
@@ -117,7 +117,7 @@ const CartForm = ({ items }) => {
               placeholder="Email"
             />
           </div>
-          <div className="d-flex justify-content-between">
+          <div className="d-flex justify-content-between inputCarrito">
             <label>Teléfono:</label>
             <input
               className="col-7 text-center"

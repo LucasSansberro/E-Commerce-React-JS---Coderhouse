@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const EmptyCart = () => {
   return (
-    <div className="container cuadroScripts w-25 d-flex flex-column justify-content-between text-center">
+    <div className="container cuadroScripts d-flex flex-column justify-content-between text-center">
       <div>
         <i className="bi bi-cart-x emptyCart"></i>
       </div>
