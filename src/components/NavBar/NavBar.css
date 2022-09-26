@@ -1,0 +1,44 @@
+.botonAbrirCarrito {
+  background: none;
+  color: white;
+  border: 0;
+  position: relative;
+}
+
+.cantidadCarrito {
+  position: absolute;
+  top: -10px;
+  right: -5px;
+  font-size: 12px;
+  background-color: red;
+  color: white;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.boton-NavBar {
+  text-decoration: none;
+}
+
+.lista-generos {
+  padding: 15px;
+  background-color: lightcyan;
+}
+
+.item-lista-generos {
+  margin-top: 15px;
+}
+
+.link-item-lista-generos {
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand-NavBar {
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand-NavBar:hover {
+  color: gray;
+}

@@ -1,31 +1,3 @@
-.botonAbrirCarrito {
-  background: none;
-  color: white;
-  border: 0;
-  position: relative;
-}
-
-.cantidadCarrito {
-  position: absolute;
-  top: -10px;
-  right: -5px;
-  font-size: 12px;
-  background-color: red;
-  color: white;
-  padding: 3px;
-  border-radius: 3px;
-}
-
-.bookCard {
-  margin: 0 auto;
-  width: 20em;
-  height: 100%;
-}
-
-.img-Bookcard {
-  height: 100%;
-}
-
 .boton-itemCount {
   background-color: lightblue;
   border-radius: 10px;
@@ -62,42 +34,6 @@
   font-size: 1.25em;
 }
 
-.boton-detalles-Item {
-  width: 100%;
-}
-
-.boton-NavBar {
-  text-decoration: none;
-}
-
-.brand-NavBar {
-  text-decoration: none;
-  color: inherit;
-}
-
-.brand-NavBar:hover {
-  color: gray;
-}
-
-.lista-generos {
-  padding: 15px;
-  background-color: lightcyan;
-}
-
-.item-lista-generos {
-  margin-top: 15px;
-}
-
-.link-item-lista-generos {
-  text-decoration: none;
-  color: inherit;
-}
-
-.cono-wip {
-  font-size: 500px;
-  margin-left: 600px;
-}
-
 .removePointer:hover {
   cursor: default;
   background-color: #0d6efd;
@@ -106,10 +42,6 @@
 .removePointerCart:hover {
   cursor: default;
   background-color: #f0f0f0;
-}
-
-.emptyCart {
-  font-size: 2.5em;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -122,10 +54,6 @@
     font-size: 0.85em;
     text-align: center;
   }
-
-  .bookCard{
-    width:15em;
-  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
@@ -137,15 +65,4 @@
     font-size: 1em;
     text-align: center;
   }
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type="number"] {
-  -moz-appearance: textfield;
 }

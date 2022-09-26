@@ -1,4 +1,4 @@
-import "../../styles.css";
+import "./NavBar.css";
 import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 

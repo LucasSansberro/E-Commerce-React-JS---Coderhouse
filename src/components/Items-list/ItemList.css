@@ -1,0 +1,29 @@
+.bookCard {
+  margin: 0 auto;
+  width: 20em;
+  height: 100%;
+}
+
+.img-Bookcard {
+  height: 100%;
+}
+
+.boton-detalles-Item {
+  width: 100%;
+}
+
+.removePointer:hover {
+  cursor: default;
+  background-color: #0d6efd;
+}
+
+.removePointerCart:hover {
+  cursor: default;
+  background-color: #f0f0f0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .bookCard {
+    width: 15em;
+  }
+}
