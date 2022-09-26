@@ -24,7 +24,7 @@ const ItemDetailContainer = () => {
 
   return (
     <div>
-      <div className="container-fluid ">
+      <div>
         {Object.getOwnPropertyNames(items).length === 0 ? (
           <div className="d-flex justify-content-center mt-5">
             <div className="spinner-border" role="status">

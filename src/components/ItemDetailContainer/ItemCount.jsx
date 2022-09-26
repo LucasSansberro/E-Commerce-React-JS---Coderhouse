@@ -25,20 +25,20 @@ const ItemCount = ({ stock, initial, onAdd }) => {
   };
   return (
     <div className="row justify-content-around">
-      <div className="boton-itemCount col-5">
-        <button className="boton-agregar-quitar" onClick={quitarItem}>
-          <i className="bi bi-dash-circle"></i>
+      <div className="boton-itemCount col-5 ">
+        <button className="boton-agregar-quitar " onClick={quitarItem}>
+          <i className="bi bi-dash-circle responsiveSizingItemDetail"></i>
         </button>
         <h5>{count}</h5>
         <button className="boton-agregar-quitar" onClick={agregarItem}>
-          <i className="bi bi-plus-circle"></i>
+          <i className="bi bi-plus-circle responsiveSizingItemDetail"></i>
         </button>
       </div>
       <button
         className="boton-itemCount boton-agregarCarrito col-5"
         onClick={() => onAdd(count)}
       >
-        <span className="span-boton-agregarCarrito">Agregar al carrito</span>
+        <span className="span-boton-agregarCarrito responsiveSizingItemDetail">Agregar al carrito</span>
       </button>
     </div>
   );
