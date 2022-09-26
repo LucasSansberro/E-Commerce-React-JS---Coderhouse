@@ -85,7 +85,7 @@ const CartForm = ({ items }) => {
           <ul className=" listaCarrito">
             {items.map((item, index) => (
               <li className="m-3 d-flex justify-content-between" key={index}>
-                {item.nombre} - {item.quantity} unidades
+                {item.nombre} - {item.quantity} unidad/es
                 <button onClick={() => removeItem(item.id)}>
                   <i className="bi bi-trash3"></i>
                 </button>
