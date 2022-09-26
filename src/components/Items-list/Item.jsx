@@ -7,7 +7,7 @@ const BookCard = (props) => {
 
   return (
     <div className="col-xl-4 col-md-6 mb-5">
-    <div className="card bookCard text-center">
+    <div className="card bookCard text-center p-2">
       <img
         className="card-img-top img-Bookcard"
         src={img}
@@ -17,7 +17,7 @@ const BookCard = (props) => {
         <h5 className="card-title">{nombre}</h5>
         <p className="card-text">{genero}</p>
       </div>
-      <p className="btn btn-primary ">Precio: ${precio}</p>
+      <p className="btn btn-primary removePointer">Precio: ${precio}</p>
       <Link to={`/item/${id}`}>
         <p className="btn btn-primary boton-detalles-Item">Ver más</p>
       </Link>
